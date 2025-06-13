@@ -1,12 +1,6 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      { "source": "/OneSignalSDKWorker.js", "destination": "/OneSignalSDKWorker.js" },
-      { "source": "/OneSignalSDK.sw.js", "destination": "/OneSignalSDK.sw.js" },
-      { "source": "/OneSignalSDK.worker.js", "destination": "/OneSignalSDK.worker.js" },
-      { "source": "**", "destination": "/index.html" }
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }
