@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alerta AMBER Web</title>
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' https://cdn.onesignal.com https://onesignal.com;">
-  
-  <!-- OneSignal SDK -->
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
   <script src="app.js" defer></script>
-
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #fff3f3;
+      color: #333;
       text-align: center;
+      padding: 50px;
     }
-
-    h1 {
-      font-size: 2em;
-      color: #222;
-      margin-bottom: 20px;
-    }
-
-    button {
-      padding: 15px 30px;
-      font-size: 16px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #0056b3;
+    .mensaje {
+      font-size: 1.2em;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <h1>Alerta AMBER Web</h1>
-  <button id="btnActivar">Activar notificaciones</button>
+  <div class="mensaje">Acepta la suscripción para recibir notificaciones de Alerta AMBER</div>
 </body>
 </html>
+
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(to right, #ffe6e6, #fff);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #b30000;
+  }
+
+  .mensaje {
+    font-size: 1.1em;
+    max-width: 360px;
+    padding: 20px;
+    border: 2px dashed #ff4d4d;
+    border-radius: 10px;
+    background-color: #fffafa;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8em;
+    }
+
+    .mensaje {
+      font-size: 1em;
+      padding: 16px;
+    }
+  }
+</style>

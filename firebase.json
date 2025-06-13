@@ -1,10 +1,1 @@
-{
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
-}
+{"hosting": {"public": "public", "ignore": ["firebase.json", "**/.*", "**/node_modules/**"], "headers": [{"source": "/OneSignalSDKWorker.js", "headers": [{"key": "Service-Worker-Allowed", "value": "/"}]}, {"source": "/OneSignalSDKUpdaterWorker.js", "headers": [{"key": "Service-Worker-Allowed", "value": "/"}]}]}}
